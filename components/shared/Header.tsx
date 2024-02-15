@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-// import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import NavItems from "./NavItems";
 import MobileNav from "./MobileNav";
 
@@ -18,7 +18,7 @@ const Header = () => {
             height={38}
           />
         </Link>
-{/* 
+
         <SignedIn>
             <nav className="md:flex-between hidden w-full max-w-xs">
                 <NavItems/>
@@ -36,7 +36,7 @@ const Header = () => {
               <Link href="/sign-in">Login</Link>
             </Button>
           </SignedOut>
-        </div> */}
+        </div>
       </div>
     </header>
   );
